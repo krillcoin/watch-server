@@ -1,3 +1,6 @@
 [submodule "client"]
 	path = client
 	url = https://github.com/krillcoin/watch.git
+[submodule "core"]
+	path = core
+	url = https://github.com/krillcoin/core.git

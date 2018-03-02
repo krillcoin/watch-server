@@ -19,7 +19,6 @@ node_modules
 npm-debug.log
 full-consensus
 certs
-core
 
 .env
 
