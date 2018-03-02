@@ -1,6 +1,6 @@
 'use strict';
 var app = require('../../server/server');
-const Krill = require('../../core/node.js');
+const Krill = require('../../../core/dist/node.js');
 const _ = require('lodash')
 
 const HEX_ALPHABET = '0123456789abcdef';
@@ -28,7 +28,7 @@ module.exports = function(Block) {
         }
         var nimNode = app.get('nimNode');
         console.log('nimNode ', nimNode)
-        const netconfig = new Krill.NetworkConfig(nimNode.url, nimNode.port, nimNode.key, nimNode.cert);
+        const netconfig = new Krill.WsNetworkConfig(nimNode.url, nimNode.port, nimNode.key, nimNode.cert);
 
         $.consensus = await Krill.Consensus.full(netconfig);
 
