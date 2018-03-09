@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
+    "postinstall": "cd core && yarn && yarn build && cd .. && cd client && yarn && yarn build",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
