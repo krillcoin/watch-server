@@ -54,7 +54,7 @@ module.exports = function(app) {
                 transaction_count: $.blockchain.head.transactions.length,
                 difficulty: $.blockchain.head.difficulty,
                 size: $.blockchain.head.serializedSize,
-                reward: Krill.Policy.blockRewardAt($.blockchain.height),
+                reward: Krillcoin.Policy.blockRewardAt($.blockchain.height),
                 // transactions: [],
                 value: 0,
                 fees: 0
