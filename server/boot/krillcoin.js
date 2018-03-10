@@ -83,6 +83,7 @@ module.exports = function(app) {
 
             var Transaction = app.models.Transaction;
             var Account = app.models.Account;
+            var Block = app.models.Block;
 
             Transaction.create(_transactions, function(err, transactions) {
                 if (err) {
