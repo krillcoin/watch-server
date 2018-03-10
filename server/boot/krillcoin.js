@@ -1,5 +1,6 @@
 'use strict';
 const Krillcoin = require('../../core/dist/node.js');
+const _ = require('lodash');
 
 const HEX_ALPHABET = '0123456789abcdef';
 
